@@ -915,3 +915,11 @@ a:hover { color: var(--red); }
   }
   [data-reveal], .shot { opacity: 1; transform: none; }
 }
+
+/* Fix horizontal scroll on mobile */
+html, body { overflow-x: clip; }
+
+@media (max-width: 991.98px) {
+  .row.g-5 { --bs-gutter-x: 1.5rem; }
+  .about-shape { left: 0; }
+}
